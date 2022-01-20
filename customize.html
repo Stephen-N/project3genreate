@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="functions.js"></script>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <!-- open sans text -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <!-- <link rel="icon" href="icon_path" type="image/icon type"> -->
+        <!-- <ion-icon class="musicIcon" name="musical-notes-outline" size="large"></ion-icon> -->
+
+    <!-- moving feature -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+    <title>GenREate</title>
+</head>
+
+<body id="body" onload="customize()">
+
+
+    <div class="topnav">
+
+        <div class="topnav-left">
+            <div class="full-text">
+                <h1 class="topnav-element-left">
+                    <ion-icon name="funnel-outline" class="funnelIcon" >
+                </ion-icon>GenREate</h1> 
+            </div>
+            <div class="short-text">
+                <h1 class="topnav-element-left">
+                    <ion-icon name="funnel-outline" class="funnelIcon" >
+                </ion-icon></h1> 
+            </div>
+        </div>
+        
+        <div class="topnav-right">
+
+            <!-- <a href="#" class="topnav-element" onclick="sendToLyricsPage()">Lyrics</a> -->
+            <a href="#" class="topnav-element" onclick="userProfileClicked()">Language</a>
+            <a class="topnav-element">|</a>
+            <a class="topnav-element username" id="username2"></a>
+            <a href="#" class="topnav-element" onclick=""><img class="profileIcon" id="profileIcon2" src=""></a>
+
+        </div>
+
+    </div>
+    
+    <div class="settings-modal">
+        <div class="settings-modal-content">
+            <!-- <a href="#" class="settingsCell" onclick="">Test</a> -->
+            <div class="settingsCell" id="google_translate_element"></div> 
+        </div>
+    </div>
+      
+
+
+    
+    
+
+
+
+
+<!-- 
+    <div class="customPlaylistTitle">
+        <h1>Here's Your Custom Playlist</h1>   
+    </div> -->
+
+
+    <div class="playlistInfoRow">
+        <img class="newPlaylistCover" src="photos/pfizer.jpg"> 
+        <div class="newPlaylistText">
+            <!-- <p class="playlistToken">Playlist</p> -->
+            <h1 class="playlistTitle" contenteditable="true">Custom Playlist</h1>
+            <p class="timeToken">...</p>
+            <!-- 10 songs, 1 hr 24 min -->
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h5>Click songs to remove and add to Spotify account</h5>  
+    </div>
+
+    <div class="columnSongs">
+    </div>
+
+    <div class="buttonRow">
+        <button class="button" onclick="newPlaylist()">Create New Playlist</button>
+        <button class="button" onclick="addPlaylist()">Add Playlist To Spotify</button>
+    </div>    
+
+</body>
+</html>

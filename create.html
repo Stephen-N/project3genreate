@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="functions.js"></script>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <!-- open sans text -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+
+    <!-- moving feature -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+    <!-- script that populatws database with user info & playlists -->
+    <script src="bundle.js" defer></script>
+
+    <title>GenREate</title>
+</head>
+
+<body id="body" onload="create()">    
+    
+    <div class="topnav">
+
+        <div class="topnav-left">
+            <div class="full-text">
+                <h1 class="topnav-element-left">
+                    <ion-icon name="funnel-outline" class="funnelIcon" >
+                </ion-icon>GenREate</h1> 
+            </div>
+            <div class="short-text">
+                <h1 class="topnav-element-left">
+                    <ion-icon name="funnel-outline" class="funnelIcon" >
+                </ion-icon></h1> 
+            </div>
+        </div>
+        
+        <div class="topnav-right">
+
+            <!-- <a href="#" class="topnav-element" onclick="sendToLyricsPage()">Lyrics</a> -->
+            <a href="#" class="topnav-element" onclick="userProfileClicked()">Language</a>
+            <a class="topnav-element">|</a>
+            <a class="topnav-element username" id="username1"></a>
+            <a href="#" class="topnav-element" onclick=""><img class="profileIcon" id="profileIcon1" src=""></a>
+
+        </div>
+
+    </div>
+    
+    <div class="settings-modal">
+        <div class="settings-modal-content">
+            <!-- <a href="#" class="settingsCell" onclick="">Test</a> -->
+            <div class="settingsCell" id="google_translate_element"></div> 
+        </div>
+    </div>
+      
+
+
+
+
+
+
+
+
+    <div class="playlistLibrary" id="playlistLibrary">
+
+        <div class="libraryHeading">
+            <h1 class="">Your Spotify Library</h1>   
+        </div>
+    
+        <div class="explanation">
+            <h5>Select the playlists that you want to filter</h5>  
+        </div>
+        
+        <div class="rowPlaylists" id="rowPlaylistsId">
+        </div>
+    
+        <div class="buttonRow">
+            <button class="button" id="" onclick="goHome()">Back</button>
+            <button class="button" id="selectAllButton" onclick="selectAll()">Select All</button>
+            <button class="button" id="findGenresButton" onclick="findGenres()">Next</button>
+        </div>
+
+    </div>
+
+
+    <div class="genreLibrary" id="genreLibrary">
+
+        <div class="genreHeading">
+            <h1 class="full-text">Here Are The Genres We Found</h1>  
+            <h1 class="short-text">Genres We Found</h1>  
+        </div>
+
+        <div class="explanation">
+            <h5>Select the subgenres you want in your playlist</h5>  
+        </div>
+        
+        <div class="rowDropdowns">
+        </div>
+
+        <div class="buttonRow">
+            <button class="button" onclick="returnToPlaylists()">Reselect Playlists</button>
+            <button class="button" onclick="selectAllGenres()">Select All</button>
+            <button class="button" onclick="createPlaylist()">Create Playlist</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

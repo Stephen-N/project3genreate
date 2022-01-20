@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- javascript -->
+    <script type="text/javascript" src="functions.js"></script>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <title>GenREate</title>
+</head>
+
+<body id="body">
+    
+    <div class="horizConnectCenter horizConnect">
+        <div class="horizCenterpiece horizConnect">
+            <img class="horizSpotifyLogo  horizConnect" src="photos/spotifyLogo.png">
+            <button class="button horizConnect" onclick="connectSpotifyAcct()">Connect Your Account</button>
+        </div>
+
+        <div class="horizConnect">
+            <div class="standingLine" id=""></div>
+        </div>
+
+        <div class="horizGenreateDescription horizConnect">
+            <h1 class="horizTitle"><ion-icon name="funnel-outline" class="" ></ion-icon>GenREate</h1>  
+            <h3 class="subtitle">A Spotify Extension</h3>  
+            <p><ion-icon name="checkmark-outline"></ion-icon> Filter your playlists based on your favorite genres.</p>
+            <p><ion-icon name="checkmark-outline"></ion-icon> Watch real time lyrics powered by Genius.</p>
+        </div>
+    </div>
+
+    <div class="vertConnectCenter vertConnect">
+        <div class="vertCenterpiece vertConnect">
+            <img class="vertSpotifyLogo vertConnect" src="photos/spotifyLogo.png">
+            <button class="button vertConnect" onclick="connectSpotifyAcct()">Connect Your Account</button>
+        </div>
+
+        <div class="vertConnect">
+            <div class="sleepingLine" id=""></div>
+        </div>
+
+        <div class="vertGenreateDescription vertConnect">
+            <h1 class="vertTitle"><ion-icon name="funnel-outline" class="" ></ion-icon>GenREate</h1>  
+            <h3 class="subtitle">A Spotify Extension</h3>  
+            <p><ion-icon name="checkmark-outline"></ion-icon> Filter your playlists based on your favorite genres.</p>
+            <p><ion-icon name="checkmark-outline"></ion-icon> Watch real time lyrics powered by Genius.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".dot"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+
+    <div class="lightModeConfigurations">
+        <a href="#" onclick="toggleDarkLight();"><ion-icon id="lightModeIcon" name="sunny-outline" size="small"></ion-icon></a>
+    </div>
+
+
+</body>
+</html>
